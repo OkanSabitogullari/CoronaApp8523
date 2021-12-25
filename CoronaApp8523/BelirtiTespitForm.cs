@@ -43,7 +43,7 @@ namespace CoronaApp8523
 
         private void TespitEt()
         {
-            if (rbKadın.Checked)
+            if (rbKadin.Checked)
             {
                 tbSonuc.Text = "Bayan";
             }
@@ -76,7 +76,16 @@ namespace CoronaApp8523
 
         private void bTemizle_Click(object sender, EventArgs e)
         {
-
+            tbAd.Text = "";
+            tbSoyad.Clear();
+            ddlSehir.SelectedIndex = 0;
+            nudYas.Value = 50;
+            rbKadin.Checked = true;
+            dtpTarih.Value = DateTime.Now;
+            cbAtes.Checked = false;
+            cbBogaz.Checked = false;
+            cbOksuruk.Checked = false;
+            tbSonuc.Text = "";
         }
 
         private void cbAtes_CheckedChanged(object sender, EventArgs e)
@@ -92,6 +101,11 @@ namespace CoronaApp8523
         private void cbBogaz_CheckedChanged(object sender, EventArgs e)
         {
             TespitEt();
+        }
+
+        private void tbSonuc_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

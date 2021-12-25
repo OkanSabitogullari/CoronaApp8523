@@ -23,7 +23,24 @@ namespace CoronaApp8523
             form.Show();
         }
 
-        private void belirtiTespitToolStripMenuItem_Click(object sender, EventArgs e)
+ 
+        private void yüzdeTespitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            YuzdeTespitForm form = new YuzdeTespitForm();
+            form.MdiParent = this;
+            form.WindowState = FormWindowState.Maximized;
+            form.Show();
+        }
+
+
+        private void AnaForm_Load(object sender, EventArgs e)
+        {
+            HosgeldinForm form = new HosgeldinForm();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void belirtiTespitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             BelirtiTespitForm form = new BelirtiTespitForm();
             form.MdiParent = this;

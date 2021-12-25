@@ -39,14 +39,14 @@ namespace CoronaApp8523
             this.tbSoyad = new System.Windows.Forms.TextBox();
             this.ddlSehir = new System.Windows.Forms.ComboBox();
             this.nudYas = new System.Windows.Forms.NumericUpDown();
-            this.rbKadın = new System.Windows.Forms.RadioButton();
+            this.rbKadin = new System.Windows.Forms.RadioButton();
             this.rbErkek = new System.Windows.Forms.RadioButton();
             this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cbAtes = new System.Windows.Forms.CheckBox();
-            this.cbOksuruk = new System.Windows.Forms.CheckBox();
             this.cbBogaz = new System.Windows.Forms.CheckBox();
+            this.cbOksuruk = new System.Windows.Forms.CheckBox();
+            this.cbAtes = new System.Windows.Forms.CheckBox();
             this.bTespit = new System.Windows.Forms.Button();
             this.bTemizle = new System.Windows.Forms.Button();
             this.tbSonuc = new System.Windows.Forms.TextBox();
@@ -159,18 +159,18 @@ namespace CoronaApp8523
             0,
             0});
             // 
-            // rbKadın
+            // rbKadin
             // 
-            this.rbKadın.AutoSize = true;
-            this.rbKadın.Checked = true;
-            this.rbKadın.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rbKadın.Location = new System.Drawing.Point(90, 137);
-            this.rbKadın.Name = "rbKadın";
-            this.rbKadın.Size = new System.Drawing.Size(61, 22);
-            this.rbKadın.TabIndex = 10;
-            this.rbKadın.TabStop = true;
-            this.rbKadın.Text = "Kadın";
-            this.rbKadın.UseVisualStyleBackColor = true;
+            this.rbKadin.AutoSize = true;
+            this.rbKadin.Checked = true;
+            this.rbKadin.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rbKadin.Location = new System.Drawing.Point(90, 137);
+            this.rbKadin.Name = "rbKadin";
+            this.rbKadin.Size = new System.Drawing.Size(61, 22);
+            this.rbKadin.TabIndex = 10;
+            this.rbKadin.TabStop = true;
+            this.rbKadin.Text = "Kadın";
+            this.rbKadin.UseVisualStyleBackColor = true;
             // 
             // rbErkek
             // 
@@ -199,7 +199,7 @@ namespace CoronaApp8523
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.rbErkek);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.rbKadın);
+            this.groupBox1.Controls.Add(this.rbKadin);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.nudYas);
             this.groupBox1.Controls.Add(this.label4);
@@ -207,7 +207,7 @@ namespace CoronaApp8523
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.tbSoyad);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(12, 22);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(457, 197);
             this.groupBox1.TabIndex = 13;
@@ -219,36 +219,12 @@ namespace CoronaApp8523
             this.groupBox2.Controls.Add(this.cbBogaz);
             this.groupBox2.Controls.Add(this.cbOksuruk);
             this.groupBox2.Controls.Add(this.cbAtes);
-            this.groupBox2.Location = new System.Drawing.Point(12, 225);
+            this.groupBox2.Location = new System.Drawing.Point(12, 215);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(457, 95);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Belirtiler";
-            // 
-            // cbAtes
-            // 
-            this.cbAtes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbAtes.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cbAtes.Location = new System.Drawing.Point(7, 20);
-            this.cbAtes.Name = "cbAtes";
-            this.cbAtes.Size = new System.Drawing.Size(104, 24);
-            this.cbAtes.TabIndex = 0;
-            this.cbAtes.Text = "Ateş";
-            this.cbAtes.UseVisualStyleBackColor = true;
-            this.cbAtes.CheckedChanged += new System.EventHandler(this.cbAtes_CheckedChanged);
-            // 
-            // cbOksuruk
-            // 
-            this.cbOksuruk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbOksuruk.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cbOksuruk.Location = new System.Drawing.Point(7, 44);
-            this.cbOksuruk.Name = "cbOksuruk";
-            this.cbOksuruk.Size = new System.Drawing.Size(104, 24);
-            this.cbOksuruk.TabIndex = 1;
-            this.cbOksuruk.Text = "Öksürük";
-            this.cbOksuruk.UseVisualStyleBackColor = true;
-            this.cbOksuruk.CheckedChanged += new System.EventHandler(this.cbOksuruk_CheckedChanged);
             // 
             // cbBogaz
             // 
@@ -262,11 +238,35 @@ namespace CoronaApp8523
             this.cbBogaz.UseVisualStyleBackColor = true;
             this.cbBogaz.CheckedChanged += new System.EventHandler(this.cbBogaz_CheckedChanged);
             // 
+            // cbOksuruk
+            // 
+            this.cbOksuruk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbOksuruk.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cbOksuruk.Location = new System.Drawing.Point(7, 44);
+            this.cbOksuruk.Name = "cbOksuruk";
+            this.cbOksuruk.Size = new System.Drawing.Size(104, 24);
+            this.cbOksuruk.TabIndex = 1;
+            this.cbOksuruk.Text = "Öksürük";
+            this.cbOksuruk.UseVisualStyleBackColor = true;
+            this.cbOksuruk.CheckedChanged += new System.EventHandler(this.cbOksuruk_CheckedChanged);
+            // 
+            // cbAtes
+            // 
+            this.cbAtes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbAtes.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cbAtes.Location = new System.Drawing.Point(7, 19);
+            this.cbAtes.Name = "cbAtes";
+            this.cbAtes.Size = new System.Drawing.Size(104, 24);
+            this.cbAtes.TabIndex = 0;
+            this.cbAtes.Text = "Ateş";
+            this.cbAtes.UseVisualStyleBackColor = true;
+            this.cbAtes.CheckedChanged += new System.EventHandler(this.cbAtes_CheckedChanged);
+            // 
             // bTespit
             // 
             this.bTespit.BackColor = System.Drawing.Color.DarkOrange;
             this.bTespit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bTespit.Location = new System.Drawing.Point(31, 326);
+            this.bTespit.Location = new System.Drawing.Point(32, 313);
             this.bTespit.Name = "bTespit";
             this.bTespit.Size = new System.Drawing.Size(92, 39);
             this.bTespit.TabIndex = 15;
@@ -278,7 +278,7 @@ namespace CoronaApp8523
             // 
             this.bTemizle.BackColor = System.Drawing.Color.DarkOrange;
             this.bTemizle.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bTemizle.Location = new System.Drawing.Point(130, 326);
+            this.bTemizle.Location = new System.Drawing.Point(130, 313);
             this.bTemizle.Name = "bTemizle";
             this.bTemizle.Size = new System.Drawing.Size(87, 39);
             this.bTemizle.TabIndex = 16;
@@ -288,12 +288,13 @@ namespace CoronaApp8523
             // 
             // tbSonuc
             // 
-            this.tbSonuc.Location = new System.Drawing.Point(12, 372);
+            this.tbSonuc.Location = new System.Drawing.Point(12, 358);
             this.tbSonuc.Multiline = true;
             this.tbSonuc.Name = "tbSonuc";
             this.tbSonuc.ReadOnly = true;
             this.tbSonuc.Size = new System.Drawing.Size(457, 97);
             this.tbSonuc.TabIndex = 17;
+            this.tbSonuc.TextChanged += new System.EventHandler(this.tbSonuc_TextChanged);
             // 
             // BelirtiTespitForm
             // 
@@ -329,7 +330,7 @@ namespace CoronaApp8523
         private System.Windows.Forms.TextBox tbSoyad;
         private System.Windows.Forms.ComboBox ddlSehir;
         private System.Windows.Forms.NumericUpDown nudYas;
-        private System.Windows.Forms.RadioButton rbKadın;
+        private System.Windows.Forms.RadioButton rbKadin;
         private System.Windows.Forms.RadioButton rbErkek;
         private System.Windows.Forms.DateTimePicker dtpTarih;
         private System.Windows.Forms.GroupBox groupBox1;

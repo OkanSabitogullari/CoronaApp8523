@@ -62,13 +62,14 @@ namespace CoronaApp8523
             this.belirtiTespitToolStripMenuItem.Name = "belirtiTespitToolStripMenuItem";
             this.belirtiTespitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.belirtiTespitToolStripMenuItem.Text = "BelirtiTespit";
-            this.belirtiTespitToolStripMenuItem.Click += new System.EventHandler(this.belirtiTespitToolStripMenuItem_Click);
+            this.belirtiTespitToolStripMenuItem.Click += new System.EventHandler(this.belirtiTespitToolStripMenuItem_Click_1);
             // 
             // yüzdeTespitToolStripMenuItem
             // 
             this.yüzdeTespitToolStripMenuItem.Name = "yüzdeTespitToolStripMenuItem";
             this.yüzdeTespitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.yüzdeTespitToolStripMenuItem.Text = "YüzdeTespit";
+            this.yüzdeTespitToolStripMenuItem.Click += new System.EventHandler(this.yüzdeTespitToolStripMenuItem_Click);
             // 
             // yardımToolStripMenuItem
             // 
@@ -81,12 +82,13 @@ namespace CoronaApp8523
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 493);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AnaForm";
             this.Text = "CoronaApp";
+            this.Load += new System.EventHandler(this.AnaForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
